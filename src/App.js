@@ -1,11 +1,13 @@
 import React from 'react';
-import Changer from './components/changer';
+import Time from './components/time';
+import Manipulation from './components/manipulation';
+import './css/main/style.css';
+
 function App() {
   return (
-    <React.Fragment>
-      <h1>Changer</h1>
-      <Changer/>
-    </React.Fragment>
+      <main className='main'>
+        <Manipulation/>
+      </main>
   );
 }
 
