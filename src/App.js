@@ -1,13 +1,11 @@
 import React from 'react';
-import Time from './components/time';
-import Manipulation from './components/manipulation';
-import './css/main/style.css';
+import "./css/main/style.css"
+
+import Calculator from './components/calculator';
 
 function App() {
   return (
-      <main className='main'>
-        <Manipulation/>
-      </main>
+      <Calculator/>
   );
 }
 

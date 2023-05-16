@@ -16,12 +16,24 @@
 }
 p, h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
-    font-size: calc(2rem + 8vw);
+    font-size: 24px;
 }
 
 h1, h2, h3 {
     color: #283337;
+    font-size: 48px;
     font-weight: 900;
+}
+
+@media (max-width: 1366px) {
+h1, h2, h3 {
+    font-size: 36px;
+}
+}
+@media (max-width: 1024px) {
+h1, h2, h3 {
+    font-size: 32px;
+}
 }
 p {
     font-style: normal;

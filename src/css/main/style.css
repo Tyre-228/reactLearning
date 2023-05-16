@@ -1,56 +1,69 @@
 @import "../cleaner/cleaner.css";
-html {
-  width: 100vw;
+* {
+  font-size: 24px;
 }
 
-.wrapper {
-  display: block;
-  min-width: 100vw;
-  background-color: #008080;
-}
-
-.main {
+.calculator {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  padding: 30vh 3vw 0px 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator__content {
+  width: 80%;
+  min-height: 600px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: calc(1rem + 1vw);
+  padding-top: 4rem;
+  background-color: #3333FF;
 }
 
-.time {
-  text-align: center;
-  margin-bottom: calc(2rem + 5vw);
+.calculator__display {
+  background-color: whitesmoke;
+  width: 100%;
+  height: calc(3rem + 1.5vw);
+  text-align: end;
+  font-size: calc(2rem + 1.5vw);
+  padding-right: 5px;
+  margin-bottom: calc(1rem + 2vw);
+  overflow: auto;
 }
 
-.manipulation {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+.controller {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.controller__numbers {
+  width: 80%;
+  display: flex;
   flex-wrap: wrap;
-  background-color: white;
 }
-
-.manipulation__change-delay {
-  min-width: 100%;
-  margin-bottom: calc(0.5rem + 1vw);
-}
-
-.time_add, .time_substract {
-  background-color: #D3D3D3;
-  min-width: calc(3rem + 3vw);
-  min-height: calc(3rem + 3vw);
-  width: 50%;
-  height: 100%;
-  font-size: calc(3rem + 3vw);
-  text-align: center;
-}
-
-.manipulation__reset, .manipulation__start {
+.controller__numbers button {
   width: 40%;
-  height: -moz-max-content;
-  height: max-content;
-  background-color: gray;
-  text-align: center;
+  height: 60px;
+  background-color: #2b2b8f;
+  margin: 2px;
+}
+
+.controller__operations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.controller__operations > button {
+  width: 40%;
+  height: 60px;
+  background-color: #2b2b8f;
+  margin: 2px;
+}
+.controller__operations #result {
+  background-color: orange;
+}
+.controller__operations #multiply > span {
+  display: block;
+  transform: rotate(45deg);
 }/*# sourceMappingURL=style.css.map */
