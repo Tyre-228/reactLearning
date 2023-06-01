@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.header {
+  text-align: center;
+  margin-top: calc(1vw + 1%);
+}
+.question {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.question:last-child {
+  margin-bottom: 50px;
+}
+input {
+  border: 1px solid gray;
+}
+.correct:after {
+  content: "Correct";
+  margin-left: 25px;
+  font-weight: 700;
+  color: green;
+}
+.wrong:after {
+  content: "Wrong";
+  margin-left: 25px;
+  font-weight: 700;
+  color: red;
+}

@@ -1,11 +1,13 @@
-import React from 'react';
-import "./css/main/style.css"
-
-import Calculator from './components/calculator';
+import React, { useState } from 'react';
+import Header from './components/header';
+import Main from './components/main';
 
 function App() {
   return (
-      <Calculator/>
+    <>
+      <Header/>
+      <Main/>
+    </>
   );
 }
 
